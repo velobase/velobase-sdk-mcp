@@ -1,0 +1,29 @@
+{
+  "name": "@velobaseai/velobase-sdk-mcp",
+  "version": "0.1.0",
+  "private": false,
+  "description": "MCP server for Velobase Billing SDK guidance and troubleshooting",
+  "type": "module",
+  "main": "src/index.js",
+  "bin": {
+    "velobase-sdk-mcp": "src/index.js"
+  },
+  "files": [
+    "src",
+    "README.md"
+  ],
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "check": "node --check src/index.js",
+    "prepublishOnly": "npm run check"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.12.0"
+  }
+}
