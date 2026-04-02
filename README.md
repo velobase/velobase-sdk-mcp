@@ -4,11 +4,10 @@ An MCP server that helps AI tools discover, use, and troubleshoot the Velobase B
 
 ## Features
 
-- `sdk_capabilities`: Show capability overview for both SDKs
-- `sdk_quickstart`: Return install and minimal examples by language
-- `sdk_locate_reference`: Return key SDK reference file paths
-- `sdk_operation_guide`: Generate parameter and code templates by operation
-- `sdk_troubleshoot`: Provide diagnosis and fixes based on error symptoms
+- `sdk_download_and_usage`: Tell AI how to download/install Python or JavaScript SDK and how to use it based on the SDK README
+
+Tool input:
+- `language`: `python` | `javascript` | `all` (default)
 
 ## Requirements
 
