@@ -1,6 +1,6 @@
 {
   "name": "@velobaseai/velobase-sdk-mcp",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "private": false,
   "description": "MCP server for Velobase Billing SDK guidance and troubleshooting",
   "type": "module",
