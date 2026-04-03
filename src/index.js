@@ -87,7 +87,7 @@ function createServer() {
   const server = new Server(
     {
       name: "velobase-sdk-mcp",
-      version: "0.1.0",
+      version,
     },
     {
       capabilities: {
