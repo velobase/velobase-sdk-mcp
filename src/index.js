@@ -52,10 +52,10 @@ function sdkDownloadAndUsage(language) {
           "",
           "## Step 3: Implement token billing flow in code",
           "- Initialize `Velobase(api_key=...)`",
-          "- Deposit credits to customer",
-          "- Use freeze before business execution",
+          "- Deposit credits to customer (supports `credit_type`, `starts_at`, `expires_at`)",
+          "- Use freeze before business execution, or use deduct for immediate charges",
           "- Use consume on success or unfreeze on failure",
-          "- Keep idempotency keys stable (`idempotency_key` / `business_id`)",
+          "- Keep idempotency keys stable (`idempotency_key` / `transaction_id`)",
         ].join("\n"),
       );
       continue;
@@ -77,10 +77,10 @@ function sdkDownloadAndUsage(language) {
         "",
         "## Step 3: Implement token billing flow in code",
         "- Initialize `new Velobase({ apiKey })`",
-        "- Deposit credits to customer",
-        "- Use freeze before business execution",
+        "- Deposit credits to customer (supports `creditType`, `startsAt`, `expiresAt`)",
+        "- Use freeze before business execution, or use deduct for immediate charges",
         "- Use consume on success or unfreeze on failure",
-        "- Keep idempotency keys stable (`idempotencyKey` / `businessId`)",
+        "- Keep idempotency keys stable (`idempotencyKey` / `transactionId`)",
       ].join("\n"),
     );
   }
